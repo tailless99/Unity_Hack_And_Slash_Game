@@ -1,21 +1,34 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
+using static Constants;
 
-public class PlayerStateIdle : PlayerState, IPlayerState {
-    public PlayerStateIdle(PlayerController playerController, Animator animator) : base(playerController, animator) {
+public class PlayerStateIdle: PlayerState, IPlayerState
+{
+    public PlayerStateIdle(PlayerController playerController, Animator animator, PlayerInput playerInput) 
+        : base(playerController, animator, playerInput) { }
+
+    public void Enter()
+    {
+        _animator.SetBool(PlayerAnimParamIdle, true);
+        
+        // Player Inputì— ëŒ€í•œ ì•¡ì…˜ í• ë‹¹
+        _playerInput.actions["Fire"].performed += Attack;
+        _playerInput.actions["Jump"].performed += Jump;
     }
 
-    // »óÅÂ ÁøÀÔ ½Ã ÇÒ ÀÏ
-    public void Enter() {
-        throw new System.NotImplementedException();
+    public void Update()
+    {
+        if (_playerInput.actions["Move"].IsPressed()) {
+            _playerController.SetState(EPlayerState.Move);
+        }
     }
 
-    // »óÅÂ ÁßÀÏ ¶§ ÇÒ ÀÏ
-    public void Exit() {
-        throw new System.NotImplementedException();
-    }
+    public void Exit()
+    {
+        _animator.SetBool(PlayerAnimParamIdle, false);
 
-    // »óÅÂ ÇØÁö ½Ã ÇÒ ÀÏ
-    public void Update() {
-        throw new System.NotImplementedException();
+        // Player Inputì— ëŒ€í•œ ì•¡ì…˜ í•´ì œ
+        _playerInput.actions["Fire"].performed -= Attack;
+        _playerInput.actions["Jump"].performed -= Jump;
     }
 }

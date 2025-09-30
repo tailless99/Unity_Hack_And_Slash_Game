@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: e08990b0c2045624ea48932e92bb37a1
+  productGUID: 90108f0a3500fd3458fa6ebbee9d7f4d
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: 3D_GAME5
+  productName: 3d-game5
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -790,14 +790,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: 3D_GAME5
+  metroPackageName: 3d-game5
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: 3D_GAME5
+  metroApplicationDescription: 3d-game5
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -869,11 +869,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: 9d51a89d-6693-4d24-b88c-7a8e009c6f35
+  cloudProjectId: 109404ab-52ae-4d91-a395-98b6e6233f52
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 3D_GAME5
-  organizationId: lte6069
+  projectName: 3d-game5
+  organizationId: gamedojang
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
